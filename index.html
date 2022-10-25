@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*css reset */
+        body{
+            font-style: italic;
+            text-transform: capitalize;
+            margin: 0px;
+            padding: 0px;
+            background: url('fitnessimg.jpg');
+            color: antiquewhite;
+        }
+        .left{
+            line-height: 10px;
+            font-size: 36px;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+           /* border: 2px solid red;*/
+            text-align: center;
+
+        }
+        .mid{
+            display: block;
+            width: 800px;
+            margin: 20px auto;
+           /* border: 2px solid palevioletred;*/
+
+        }
+        .right{
+            display: inline-block;
+            /*border: 2px solid cadetblue;*/
+            position: absolute;
+            right: 34px;
+            top: 20px;
+
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: azure;
+            text-decoration: none;
+           padding: 34px;
+           font-size: 25px;
+           font-style: italic;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: aqua;
+        }
+        .left img{
+            width: 100px;
+        }
+        .btn{ background-color: black;
+            color: aqua;
+          padding: 4px 14px;
+         border-radius: 25px;
+         margin: 0px 9px;
+         font-size: 15px;
+         cursor: pointer;
+         text-transform: capitalize;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0.466);
+        }
+        .container{
+            border: 2px solid whitesmoke;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+
+        }
+        .form-group input{
+            font-style: italic;
+            text-transform: capitalize;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 25px;
+        }
+    .container button{
+        width: 75%;
+        color: blueviolet;
+        text-align: center;
+        border-radius: 5px;
+        display: block;
+        margin: 20px auto;
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <header class="heading">
+        <!--left box for logo -->
+        <div class="left">
+            <img src="gymlogo.jpg" alt="">
+           <div>anjali fitness</div>
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid"> 
+            <ul class="navbar">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">fitness calculator</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+         <button class="btn">call us now</button> <button class="btn">emil us</button>
+        </div>
+    </header>
+    <div class="container">
+       <h1>join the best gym of kanpur</h1>
+       <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="enter your name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="enter your gender">
+        </div>
+        <div class="form-group">
+            <input type="number" name="" placeholder="enter your age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="enter your locality">
+        </div>
+        <button class="btn">submit</button>
+       </form>
+        </div>
+</body>
+</html>
